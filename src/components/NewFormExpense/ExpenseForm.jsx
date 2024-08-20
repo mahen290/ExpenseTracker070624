@@ -44,17 +44,17 @@ function ExpenseForm(props)
             <div className = "new-expense-controls">
 
                 <div className = "new-expense-control">
-                    <label for> Your Expense Title : </label>
+                    <label> Your Expense Title : </label>
                     <input type = "text" onChange = { userChangeTitle } value = { userEnterTitle } /> 
                 </div>
 
                 <div className = "new-expense-control">
-                    <label for> Your Expense Date : </label>
+                    <label> Your Expense Date : </label>
                     <input type = "date" onChange = { userChangeDate } value = { userEnterDate } /> 
                 </div>
 
                 <div className = "new-expense-control">
-                    <label for> Your Expense Amount : </label>
+                    <label> Your Expense Amount : </label>
                     <input type = "number" onChange = { userChangeAmount } value = { userEnterAmount } /> 
                 </div>
 

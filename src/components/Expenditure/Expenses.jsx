@@ -8,11 +8,15 @@ function Expenses(props)
     return (
         <Card className="expenses">
             {
-                props.item.map( (New_Expense) => ( 
-                <ExpenseItem title = { New_Expense.title } date = { New_Expense.date } amount = { New_Expense.amount }> 
+                props.item.map( (New_Expense, index) => ( 
+                <ExpenseItem 
+                    key = { index } 
+                    title = { New_Expense.title } 
+                    date = { New_Expense.date } 
+                    amount = { New_Expense.amount }> 
                 </ExpenseItem> 
-                ) )
-            }
+                ))
+            };
         </Card>
     );
 }
